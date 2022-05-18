@@ -11,9 +11,8 @@ import './styles.css'
 
 export default function App() {
   return (
-    <React.Fragment>
-      <div className='container'>
-        <Navbar />
+    <div className="main" id="container">
+      <React.Fragment>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
@@ -23,7 +22,8 @@ export default function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path='*' element={<NoMatch />} />
         </Routes>
-      </div>
-    </React.Fragment>
+      </React.Fragment>
+      <Navbar />
+    </div>
   )
 }
