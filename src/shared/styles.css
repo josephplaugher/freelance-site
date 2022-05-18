@@ -61,18 +61,21 @@ li {
 }
 
 .nav {
+  color: white;
   display: flex;
   justify-content: space-around;
   padding-left: 0;
 }
 
 .nav a {
+  color: white;
   font-weight: 900;
   font-size: 25px;
   text-decoration: none;
 }
 
 .heading-center {
+  color: white;
   margin: 50px;
   text-align: center;
 }

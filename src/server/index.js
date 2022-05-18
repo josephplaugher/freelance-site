@@ -31,7 +31,7 @@ app.get('*', (req, res, next) => {
       <!DOCTYPE html>
       <html>
         <head>
-          <title>SSR with React Router</title>
+          <title>Joseph Web Development</title>
           <script src="/bundle.js" defer></script>
           <link href="/main.css" rel="stylesheet">
           <script>window.__INITIAL_DATA__ = ${serialize(data)}</script>
@@ -48,5 +48,5 @@ app.get('*', (req, res, next) => {
 const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => {
-  console.log(`Server is listening on port: ${PORT}`)
+  console.log(`Server is running in ${process.env.NODE_ENV} mode at http://localhost:${PORT}`)
 })

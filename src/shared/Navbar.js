@@ -1,36 +1,36 @@
 import * as React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const languages = [
+const pages = [
   {
-    name: 'All',
-    param: 'all'
+    path: 'Home',
+    param: 'home',
   },
   {
-    name: 'JavaScript',
-    param: 'javascript',
+    path: 'About Me',
+    param: 'about',
   },
   {
-    name: 'Ruby',
-    param: 'ruby',
+    path: 'Services',
+    param: 'services',
   },
   {
-    name: 'Python',
-    param: 'python',
+    path: 'Contact',
+    param: 'contact',
   },
   {
-    name: 'Java',
-    param: 'java',
+    path: 'Portfolio',
+    param: 'portfolio'
   }
 ]
 
-export default function Navbar () {
+export default function Navbar() {
   return (
     <ul className='nav'>
-      {languages.map(({ name, param }) => (
+      {pages.map(({ path, param }) => (
         <li key={param}>
-          <NavLink activeStyle={{fontWeight: 'bold'}} to={`/popular/${param}`}>
-            {name}
+          <NavLink activeStyle={{ fontWeight: 'bold' }} to={`/${param}`}>
+            {path}
           </NavLink>
         </li>
       ))}

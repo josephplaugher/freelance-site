@@ -1,10 +1,13 @@
+const env = require('dotenv').config()
 const path = require('path')
 const webpack = require('webpack')
 const nodeExternals = require('webpack-node-externals')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
+const mode = process.env.NODE_ENV == 'development' ? 'development' : 'production'
+console.log('webpack  mode: ', mode)
 const browserConfig = {
-  mode: "production",
+  mode: 'development',
   entry: './src/browser/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -13,7 +16,7 @@ const browserConfig = {
   module: {
     rules: [
       { test: /\.(js)$/, use: 'babel-loader' },
-      { test: /\.css$/, use: [ 'css-loader' ]}
+      { test: /\.css$/, use: ['css-loader'] }
     ]
   },
   plugins: [
@@ -24,7 +27,7 @@ const browserConfig = {
 }
 
 const serverConfig = {
-  mode: "production",
+  mode: 'development',
   entry: './src/server/index.js',
   target: 'node',
   externals: [nodeExternals()],

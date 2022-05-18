@@ -1,16 +1,29 @@
 import Home from './Home'
-import Grid from './Grid'
-import { fetchPopularRepos } from './api'
+import About from './About'
+import Services from './Services'
+import Contact from './Contact'
+import Portfolio from './Portfolio'
 
-const routes =  [
+const routes = [
   {
-    path: '/',
+    path: 'Home',
     component: Home,
   },
   {
-    path: '/popular/:id',
-    component: Grid,
-    fetchInitialData: (path = '') => fetchPopularRepos(path.split('/').pop())
+    path: 'About Me',
+    component: About,
+  },
+  {
+    path: 'Services',
+    component: Services,
+  },
+  {
+    path: 'Contact',
+    component: Contact,
+  },
+  {
+    path: 'Portfolio',
+    component: Portfolio
   }
 ]
 
