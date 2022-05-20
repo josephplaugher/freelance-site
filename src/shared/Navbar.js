@@ -39,18 +39,17 @@ export default function Navbar() {
         ))}
       </ul>
       <ul id='nav-mobile'>
-        <li><div id="menu" onClick={() => { setMenu(menu === true ? false : true) }}>MENU</div></li>
         {menu && (pages.map(({ path, param }) => (
-          <li key={param}>
-            <div className='nav-item'>
-              <NavLink activeStyle={{ fontWeight: 'bold' }} to={`/${param}`}>
+          <li key={param} onClick={() => { setMenu(false) }}>
+            <NavLink activeStyle={{ fontWeight: 'bold' }} to={`/${param}`}>
+              <div className='nav-item'>
                 {path}
-              </NavLink>
-            </div>
+              </div>
+            </NavLink>
           </li>
         )))}
-
       </ul>
+      <div id="menu" onClick={() => { setMenu(menu === true ? false : true) }}><p>MENU</p></div>
     </>
   )
 }

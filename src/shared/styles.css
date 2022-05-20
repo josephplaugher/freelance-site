@@ -64,6 +64,7 @@ li {
     width: 80vw;
   }
 
+  #menu,
   #nav-mobile {
     display: none;
   }
@@ -86,9 +87,18 @@ li {
     align-items: center;
     padding-left: 0px;
     position: absolute;
-    bottom: 10px;
+    bottom: 40px;
     width: 100vw;
     height: 30%;
+  }
+
+  #menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    position: absolute;
+    bottom: 10px;
   }
 
   #nav {
