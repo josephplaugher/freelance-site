@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Services() {
     return (
-        <>
+        <div className='content'>
             <h2 className='heading-center'>Services</h2>
             <p>
                 Joseph offers a variety of software solutions. Sometimes, an existing application will
@@ -14,6 +14,6 @@ export default function Services() {
                 <a href="/contact">Get in touch</a> with Joseph to discuss how he can make your business
                 easier to run and more profitable.
             </p>
-        </>
+        </div>
     )
 }

@@ -12,18 +12,22 @@ import './styles.css'
 
 export default function App() {
   return (
-    <div className="main" id="container">
-      <Header />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path='*' element={<NoMatch />} />
-      </Routes>
+    <div id="container">
+      <div id="scroll-container">
+        <div id="main" >
+          <Header />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path='*' element={<NoMatch />} />
+          </Routes>
+        </div>
+      </div >
       <Navbar />
-    </div>
+    </div >
   )
 }
