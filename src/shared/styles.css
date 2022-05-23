@@ -75,8 +75,9 @@ li {
     justify-content: space-around;
     position: fixed;
     bottom: 10px;
-    width: 80vw;
+    width: 100vw;
     height: 20px;
+    margin: 0 auto;
   }
 
   #menu,

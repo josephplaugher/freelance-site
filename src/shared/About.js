@@ -15,7 +15,7 @@ export default function About() {
                 Joseph strives to bring the same lean and competitive edge enjoyed by companies like Amazon to other
                 businesses by building effective and easy to use software systems. Joseph is not just another
                 software developer, he is first and foremost a business person - who sees significant competitive
-                possiblitties with software and the technical expertise to implement it.
+                possibilities with software and the technical expertise to implement it.
             </p>
 
             <h2 className='subheading-center'>Experience</h2>
