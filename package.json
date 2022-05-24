@@ -23,6 +23,7 @@
     "babel-loader": "^8.2.2",
     "concurrently": "^7.2.0",
     "css-loader": "^5.2.6",
+    "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.0.0",
     "nodemon": "^2.0.16",
     "webpack": "^5.42.0",

@@ -38,7 +38,8 @@ const serverConfig = {
   module: {
     rules: [
       { test: /\.(js)$/, use: 'babel-loader' },
-      { test: /\.css$/, use: [MiniCssExtractPlugin.loader, 'css-loader'] }
+      { test: /\.css$/, use: [MiniCssExtractPlugin.loader, 'css-loader'] },
+      // { test: /\.(jpg|png)$/, use: [{ loader: 'file-loader' }] }
     ]
   },
   plugins: [
