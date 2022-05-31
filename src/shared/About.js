@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import LinkStyle from './LinkStyle'
 
 export default function About() {
     return (
         <div className="content">
-            <h2 className='heading-center'>About</h2>
+            <h1 className='heading-center'>About</h1>
             <h2 className='subheading-center'>Business Person First, Software Developer Second.</h2>
             <p>
                 During Joseph's six years as a corporate accountant he developed an ability to identify ineffeciencies
@@ -15,9 +16,9 @@ export default function About() {
                 Do you want the same lean and competitive edge enjoyed by companies like Amazon for your business?
                 Joseph can deliver that by building effective and easy to use software systems, specific to
                 your business. Joseph is not just another
-                software developer, he is a business person who
-                <Link to='/services' style={{ fontWeight: "bold", textDecoration: "underline" }}> finds significant competitive
-                    possibilities within your business</Link>, and harnesses them using software to cut costs and grow your revenue.
+                software developer, he is a business person who finds
+                <Link to='/services' style={LinkStyle}> opportunities to cut costs and increase revenue</Link> for
+                your business.
             </p>
 
             <h2 className='subheading-center'>Experience</h2>

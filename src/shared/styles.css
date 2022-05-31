@@ -55,7 +55,6 @@ body {
 
 #main {
   margin: 0 auto;
-  max-width: 1100px;
   display: flex;
   height: 90%;
   flex-direction: column;
@@ -63,7 +62,7 @@ body {
 }
 
 .content {
-  padding: 5px;
+  padding: 15px;
 }
 
 a {
@@ -103,8 +102,8 @@ li {
   #header {
     font-size: 25px;
     color: var(--black);
-    margin: 50px;
-    text-align: center;
+    margin: 12px;
+    text-align: left;
   }
 
   .heading-center {
@@ -118,7 +117,7 @@ li {
 @media only screen and (max-width: 500px) {
   #nav-mobile {
     color: var(--black);
-    /* background-color: grey; */
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -146,7 +145,7 @@ li {
   .nav-item {
     display: flex;
     justify-content: center;
-    border: 1px solid white;
+    border: 1px solid var(--black);
     width: 99vw;
     padding: 5px;
     height: auto;
