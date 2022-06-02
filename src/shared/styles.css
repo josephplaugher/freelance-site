@@ -61,6 +61,12 @@ body {
   justify-content: flex-start;
 }
 
+#contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .content {
   padding: 15px;
 }

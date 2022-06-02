@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import LinkStyle from './LinkStyle'
+import LinkStyle from './utilities/LinkStyle'
 
 export default function About() {
     return (
