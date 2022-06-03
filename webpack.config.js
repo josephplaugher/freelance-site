@@ -1,4 +1,4 @@
-const env = require('dotenv').config()
+const Dotenv = require('dotenv-webpack')
 const path = require('path')
 const webpack = require('webpack')
 const nodeExternals = require('webpack-node-externals')
@@ -22,7 +22,8 @@ const browserConfig = {
   plugins: [
     new webpack.DefinePlugin({
       __isBrowser__: "true"
-    })
+    }),
+    new Dotenv()
   ]
 }
 
@@ -39,7 +40,7 @@ const serverConfig = {
     rules: [
       { test: /\.(js)$/, use: 'babel-loader' },
       { test: /\.css$/, use: [MiniCssExtractPlugin.loader, 'css-loader'] },
-      // { test: /\.(jpg|png)$/, use: [{ loader: 'file-loader' }] }
+      { test: /\.(jpg|png)$/, use: [{ loader: 'file-loader' }] }
     ]
   },
   plugins: [
@@ -47,6 +48,7 @@ const serverConfig = {
     new webpack.DefinePlugin({
       __isBrowser__: "false"
     }),
+    new Dotenv()
   ]
 }
 

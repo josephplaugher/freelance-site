@@ -15,12 +15,12 @@ export default function Services() {
                 to track your staff's hours? Do you have a receptionist or personal assistance who spends time on the phone
                 managing your schedule with your clients, or taking credit card payments? These are immediate areas
                 which can be improved with software.
-                <Link to='/contact' style={LinkStyle}>Let's talk</Link>  to find out how to get it done!
+                <Link to='/contact' style={LinkStyle}> Let's talk</Link>  to find out how to get it done!
             </p>
             <p>
                 Maybe you already have something in mind? Is there a process or procedure in your business which
                 is time-consuming, expensive, or something you just don't like doing yourself or managing?
-                <Link to='/contact' style={LinkStyle}>Schedule a time</Link> to discuss systemizing and
+                <Link to='/contact' style={LinkStyle}> Schedule a time</Link> to discuss systemizing and
                 possibly even automating it altogether.
             </p>
             <p>

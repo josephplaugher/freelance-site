@@ -4,12 +4,8 @@ export default {
         flexDirection: "column",
         justifyContent: "space-between",
         padding: "15px",
-        borderTop: "0px",
-        borderRight: "0px",
-        borderLeft: "0.5px solid #2665c4",
-        borderBottom: "0.5px solid #2665c4",
-        borderRadius: "5px",
-        width: "330px",
+        paddingLeft: "15px",
+
     },
     label: {
         color: "#2665c4",
@@ -21,12 +17,24 @@ export default {
     },
     optionContainerBlock: {
         display: "flex",
-        flexDirection: "column"
+        flexDirection: "column",
+        borderTop: "0px",
+        borderRight: "0px",
+        borderLeft: "0.5px solid #2665c4",
+        borderBottom: "0.5px solid #2665c4",
+        borderRadius: "5px",
+        width: "330px",
     },
     optionContainerInline: {
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-around",
+        borderTop: "0px",
+        borderRight: "0px",
+        borderLeft: "0.5px solid #2665c4",
+        borderBottom: "0.5px solid #2665c4",
+        borderRadius: "5px",
+        width: "330px",
     },
     optionGroup: {
         display: "flex",

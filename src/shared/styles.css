@@ -1,6 +1,7 @@
 @import url("https://ui.dev/font");
 
 :root {
+  --bizblue: #2665c4;
   --black: #000;
   --white: #fff;
   --red: #f32827;
@@ -30,7 +31,7 @@ body {
   padding: 0;
   height: 100vh;
   /* background: var(--black); */
-  color: var(--black);
+  color: var(--bizblue);
 }
 
 .bg-img {
@@ -44,6 +45,7 @@ body {
 
 #container {
   height: 100vh;
+  color: var(--bizblue)
 }
 
 #scroll-container {
@@ -72,9 +74,12 @@ body {
 }
 
 a {
-  color: var(--black);
   text-decoration: none;
   font-weight: 600;
+}
+
+a:visited {
+  color: var(--bizblue);
 }
 
 li {
@@ -83,7 +88,6 @@ li {
 
 @media only screen and (min-width: 501px) {
   #nav {
-    color: var(--black);
     display: flex;
     justify-content: space-around;
     position: fixed;
@@ -99,7 +103,6 @@ li {
   }
 
   .nav a {
-    color: var(--black);
     font-weight: 900;
     font-size: 25px;
     text-decoration: none;
@@ -107,13 +110,11 @@ li {
 
   #header {
     font-size: 25px;
-    color: var(--black);
     margin: 12px;
     text-align: left;
   }
 
   .heading-center {
-    color: var(--black);
     margin: 50px;
     text-align: center;
   }
@@ -122,7 +123,6 @@ li {
 
 @media only screen and (max-width: 500px) {
   #nav-mobile {
-    color: var(--black);
     background-color: var(--white);
     display: flex;
     flex-direction: column;
@@ -151,7 +151,7 @@ li {
   .nav-item {
     display: flex;
     justify-content: center;
-    border: 1px solid var(--black);
+    border: 1px solid var(--bizblue);
     width: 99vw;
     padding: 5px;
     height: auto;
@@ -159,13 +159,11 @@ li {
 
   #header {
     font-size: 27px;
-    color: var(--black);
     margin: 20px;
     text-align: center;
   }
 
   .heading-center {
-    color: var(--black);
     margin: 50px;
     text-align: center;
   }

@@ -1,5 +1,7 @@
 import express from 'express'
 import cors from 'cors'
+import cookieParser from 'cookie-parser'
+import bodyParser from 'body-parser'
 import * as React from 'react'
 import ReactDOM from 'react-dom/server'
 import { matchPath } from 'react-router-dom'
@@ -12,6 +14,16 @@ const app = express()
 
 app.use(cors())
 app.use(express.static('dist'))
+
+app.use(cookieParser())
+app.use(bodyParser.urlencoded({ extended: false })) // Parse application/x-www-form-urlencoded
+app.use(bodyParser.json())
+
+app.options('/api/contact', cors())
+app.post('/api/contact', cors(), (req, res) => {
+  console.log('contact form submitted', req.body)
+  res.status(200).json({ success: true, data: req.body })
+})
 
 app.get('*', (req, res, next) => {
   const activeRoute = routes.find((route) => matchPath(route.path, req.url)) || {}
