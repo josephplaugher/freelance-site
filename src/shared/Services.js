@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import LinkStyle from './utilities/LinkStyle'
+import LinkStyle from './components/LinkStyle'
 
 export default function Services() {
     return (

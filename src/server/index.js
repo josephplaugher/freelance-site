@@ -9,7 +9,7 @@ import { matchPath } from 'react-router-dom'
 import { StaticRouter } from 'react-router-dom/server';
 import serialize from 'serialize-javascript'
 import App from '../shared/App'
-import routes from '../shared/utilities/routes'
+import routes from '../shared/components/routes'
 
 import Mail from './contact/SendEmail'
 

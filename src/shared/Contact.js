@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import Ajax from './utilities/Ajax'
-import SetUrl from './utilities/SetUrl'
+import Ajax from '../browser/utilities/Ajax'
+import SetUrl from '../browser/utilities/SetUrl'
 import Input from './components/Input'
 import Button from './components/Button'
 import InputStyles from './components/InputStyles'
