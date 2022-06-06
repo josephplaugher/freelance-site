@@ -132,7 +132,8 @@ li {
     position: fixed;
     bottom: 50px;
     width: 100vw;
-    height: 20%;
+    height: 25%;
+    cursor: pointer;
   }
 
   #menu {
@@ -141,6 +142,7 @@ li {
     justify-content: center;
     width: 100vw;
     position: absolute;
+    cursor: pointer;
     bottom: 10px;
   }
 
@@ -158,13 +160,12 @@ li {
   }
 
   #header {
-    font-size: 27px;
-    margin: 20px;
-    text-align: center;
+    font-size: 15px;
+    margin: 12px;
+    text-align: left;
   }
 
   .heading-center {
-    margin: 50px;
     text-align: center;
   }
 

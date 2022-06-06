@@ -10,7 +10,7 @@ export default function Services() {
                 Joseph offers a variety of software solutions. If you're not sure how software can be helpful
                 for your operations, he will look closely at your business to find areas where software will
                 make a big impact on increasing
-                productivity, streamline processes, exracting more value out of your staff's wages while lighening
+                productivity, streamline processes, extracting more value out of your staff's wages while lightening
                 their load, and increasing revenue. Are you using a paper/printed time card system, or even just Excel
                 to track your staff's hours? Do you have a receptionist or personal assistance who spends time on the phone
                 managing your schedule with your clients, or taking credit card payments? These are immediate areas
