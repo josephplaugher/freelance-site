@@ -1,1 +1,1 @@
-export default { fontWeight: "bold", textDecoration: "underline" }
+export default { fontWeight: "bold", textDecoration: "underline", color: "white" }

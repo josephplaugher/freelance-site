@@ -53,45 +53,47 @@ export default function Portfolio() {
     }
 
     return (
-        <div id="contact-container" style={{ display: "flex", flexDirection: "colummn" }}>
+        <div id="contact-container" className='content' style={{ display: "flex", flexDirection: "colummn" }}>
             <h1 className='heading-center'>Contact Me</h1>
             <p style={{ padding: "15px" }}>Please complete this form and I'll be in touch within 48 hours to setup a time
                 to discuss what I can do for your business.
             </p>
-            <form onSubmit={submit}>
-                <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
-                    <Input required={true} name="fullName" value={fullName} label="Name" onChange={setFullName} error={inputError.fullName} />
-                    <Input name="companyWebsite" value={companyWebsite} label="Company Website" onChange={setCompanyWebsite} error={inputError.companyWebsite} />
-                </div>
-                <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
-                    <Input name="phoneNumber" value={phoneNumber} label="Phone Number" onChange={setPhoneNumber} type="tel" error={inputError.phoneNumber} />
-                    <Input required={true} name="email" value={email} label="Email" onChange={setEmail} error={inputError.email} />
-                </div>
-                <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", alignContent: "flex-start" }}>
-                    <div style={InputStyles.container}>
-                        <p style={InputStyles.label}>
-                            <span style={{ color: 'red', fontWeight: 'bold' }}>* </span>Message
-                        </p>
-                        <textarea style={InputStyles.textinput} name="message" onChange={(e) => { setMessage(e.target.value) }} value={message} error={inputError.message} />
+            <div id="form-div" style={{ borderRadius: "5px", backgroundColor: "white", padding: "5px" }}>
+                <form onSubmit={submit}>
+                    <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
+                        <Input required={true} name="fullName" value={fullName} label="Name" onChange={setFullName} error={inputError.fullName} />
+                        <Input name="companyWebsite" value={companyWebsite} label="Company Website" onChange={setCompanyWebsite} error={inputError.companyWebsite} />
                     </div>
-                    <div id="radio-container" style={RadioStyles.container}>
-                        <p id="radio-container-label" style={RadioStyles.label}>Prefered contact method</p>
-                        <div id="radio-option-container" style={RadioStyles.optionContainerInline} onChange={(e) => setPref(e.target.value)}>
-                            <div id="radio-email-option-group" style={RadioStyles.optionGroup}>
-                                <p id="radio-email-label" style={RadioStyles.option}>Email</p>
-                                <input type="radio" id="email-radio" name="preferedContactMethod" value="Email" style={RadioStyles.radio} />
-                            </div>
-                            <div id="radio-phone-option-group" style={RadioStyles.optionGroup}>
-                                <p id="radio-phone-label" style={RadioStyles.option}>Phone</p>
-                                <input type="radio" id="email-radio" name="preferedContactMethod" value="Phone" style={RadioStyles.radio} />
+                    <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
+                        <Input name="phoneNumber" value={phoneNumber} label="Phone Number" onChange={setPhoneNumber} type="tel" error={inputError.phoneNumber} />
+                        <Input required={true} name="email" value={email} label="Email" onChange={setEmail} error={inputError.email} />
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", alignContent: "flex-start" }}>
+                        <div style={InputStyles.container}>
+                            <p style={InputStyles.label}>
+                                <span style={{ color: 'red', fontWeight: 'bold' }}>* </span>Message
+                            </p>
+                            <textarea style={InputStyles.textinput} name="message" onChange={(e) => { setMessage(e.target.value) }} value={message} error={inputError.message} />
+                        </div>
+                        <div id="radio-container" style={RadioStyles.container}>
+                            <p id="radio-container-label" style={RadioStyles.label}>Prefered contact method</p>
+                            <div id="radio-option-container" style={RadioStyles.optionContainerInline} onChange={(e) => setPref(e.target.value)}>
+                                <div id="radio-email-option-group" style={RadioStyles.optionGroup}>
+                                    <p id="radio-email-label" style={RadioStyles.option}>Email</p>
+                                    <input type="radio" id="email-radio" name="preferedContactMethod" value="Email" style={RadioStyles.radio} />
+                                </div>
+                                <div id="radio-phone-option-group" style={RadioStyles.optionGroup}>
+                                    <p id="radio-phone-label" style={RadioStyles.option}>Phone</p>
+                                    <input type="radio" id="email-radio" name="preferedContactMethod" value="Phone" style={RadioStyles.radio} />
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <Button value="Contact Me!" id="submit" onClick={submit} className="button" buttonContainerclassName="" />
-                <div id="user-message">{userNotify}</div>
-            </form >
+                    <Button value="Contact Me!" id="submit" onClick={submit} className="button" buttonContainerclassName="" />
+                    <div id="user-message">{userNotify}</div>
+                </form >
+            </div>
         </div >
     )
 }

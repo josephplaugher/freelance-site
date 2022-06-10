@@ -5,6 +5,7 @@ export default {
         padding: "15px",
         paddingLeft: "15px",
         marginBottom: "15px",
+        backgroundColor: "white",
     },
     label: {
         color: "#2665c4",
@@ -13,7 +14,7 @@ export default {
         marginTop: "0px",
         marginLeft: "10px",
         marginBottom: "0px",
-        fontSize: "12px"
+        fontSize: "14px"
     },
     optionContainerBlock: {
         display: "flex",

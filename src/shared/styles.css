@@ -58,7 +58,8 @@ body {
 #main {
   margin: 0 auto;
   display: flex;
-  height: 90%;
+  height: 80vh;
+  background-color: var(--bizblue);
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -71,6 +72,8 @@ body {
 
 .content {
   padding: 15px;
+  background-color: var(--bizblue);
+  color: var(--white)
 }
 
 a {
@@ -93,8 +96,9 @@ li {
     position: fixed;
     bottom: 10px;
     width: 100vw;
-    height: 20px;
+    height: 6vh;
     margin: 0 auto;
+    font-size: 25px;
   }
 
   #menu,
@@ -115,8 +119,15 @@ li {
   }
 
   .heading-center {
-    margin: 50px;
+    margin: 50px 0px 50px 0px;
     text-align: center;
+  }
+
+  .home-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
   }
 
 }

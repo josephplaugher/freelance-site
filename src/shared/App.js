@@ -17,8 +17,8 @@ export default function App() {
       {/* <div style={{ backgroundImage: `url(${bgImg})` }} rol="image" className="bg-img" /> */}
       <div id="container">
         <div id="scroll-container">
+          <Header />
           <div id="main" >
-            <Header />
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />

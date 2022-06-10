@@ -5,8 +5,9 @@ import LinkStyle from './components/LinkStyle'
 export default function About() {
     return (
         <div className="content">
-            <h1 className='heading-center'>About</h1>
-            <h2 className='subheading-center'>Business Person First, Software Developer Second.</h2>
+            <h1 className='heading-center'>About Me<br />
+                (aka, why I am the right pereson to solve your software needs.)</h1>
+            <h3 className='subheading-center'>Business Person First, Software Developer Second</h3>
             <p>
                 During Joseph's six years as a corporate accountant he developed an ability to identify ineffeciencies
                 and potential losses caused by poor business processes. Now as a software developer, he corrects these
@@ -21,7 +22,7 @@ export default function About() {
                 your business.
             </p>
 
-            <h2 className='subheading-center'>Experience</h2>
+            <h3 className='subheading-center'>Experience</h3>
             <p>
                 After earning his baccalaureate degree in accounting, Joseph worked as Project Accountant for
                 HDR Engineering, an international civil engineering firm, for over six years while learning
