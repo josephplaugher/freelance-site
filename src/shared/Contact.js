@@ -65,8 +65,8 @@ export default function Portfolio() {
                         <Input name="companyWebsite" value={companyWebsite} label="Company Website" onChange={setCompanyWebsite} error={inputError.companyWebsite} />
                     </div>
                     <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
-                        <Input name="phoneNumber" value={phoneNumber} label="Phone Number" onChange={setPhoneNumber} type="tel" error={inputError.phoneNumber} />
                         <Input required={true} name="email" value={email} label="Email" onChange={setEmail} error={inputError.email} />
+                        <Input name="phoneNumber" value={phoneNumber} label="Phone Number" onChange={setPhoneNumber} type="tel" error={inputError.phoneNumber} />
                     </div>
                     <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", alignContent: "flex-start" }}>
                         <div style={InputStyles.container}>
@@ -90,7 +90,7 @@ export default function Portfolio() {
                         </div>
                     </div>
 
-                    <Button value="Contact Me!" id="submit" onClick={submit} className="button" buttonContainerclassName="" />
+                    <Button value="Contact Me!" id="submit" onClick={submit} buttonContainerclassName="btnContainer" />
                     <div id="user-message">{userNotify}</div>
                 </form >
             </div>

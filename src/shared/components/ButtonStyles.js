@@ -1,14 +1,22 @@
 export default {
     button: {
-        border: "0.5px solid #2665c4",
         borderRadius: "5px",
-        padding: "8px",
-        width: "auto",
-        margin: "10px"
+        margin: "0px",
+        padding: "6px 20px 6px 20px",
+        cursor: "pointer",
+        color: "white",
+        backgroundColor: "#2665c4",
+        width: "200px",
+        borderRadius: "5px",
+        borderColor: "#2665c4",
+        borderStyle: "solid",
+        borderWidth: "2px",
+        fontSize: "22px"
     },
     buttonContainer: {
         display: "flex",
         justifyContent: "center",
-        marginTop: "20px"
+        margin: "20px",
+        padding: "20px"
     }
 }

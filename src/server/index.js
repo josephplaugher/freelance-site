@@ -47,7 +47,7 @@ app.get('*', (req, res, next) => {
       <!DOCTYPE html>
       <html>
         <head>
-          <title>Joseph Web Development</title>
+          <title>Joseph Software Services</title>
           <script src="/bundle.js" defer></script>
           <link href="/main.css" rel="stylesheet">
           <script>window.__INITIAL_DATA__ = ${serialize(data)}</script>

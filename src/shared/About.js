@@ -6,7 +6,7 @@ export default function About() {
     return (
         <div className="content">
             <h1 className='heading-center'>About Me<br />
-                (aka, why I am the right pereson to solve your software needs.)</h1>
+                (aka, why I am the right pereson to solve your business process needs.)</h1>
             <h3 className='subheading-center'>Business Person First, Software Developer Second</h3>
             <p>
                 During Joseph's six years as a corporate accountant he developed an ability to identify ineffeciencies

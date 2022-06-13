@@ -30,20 +30,5 @@ export default {
         padding: "8px",
         width: "330px",
         appearance: "textfield"
-    },
-    buttonContainer: {
-        clear: "both",
-        marginLeft: "30px",
-        marginTop: "20px"
-    },
-    button: {
-        margin: "0px",
-        padding: "3px 18px 3px 18px",
-        cursor: "pointer",
-        backgroundColor: "white",
-        borderRadius: "5px",
-        borderColor: "#2665c4",
-        borderStyle: "solid",
-        borderWidth: "2px"
     }
 }
