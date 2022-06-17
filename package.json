@@ -4,6 +4,7 @@
   "scripts": {
     "start": "concurrently \"npm:build\" \"npm:start-server\" ",
     "build": "webpack -w",
+    "build:prod": " webpack",
     "start-server": "nodemon NODE_ENV='development'  dist/server.js"
   },
   "babel": {
