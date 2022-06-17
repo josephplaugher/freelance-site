@@ -89,6 +89,10 @@ li {
   list-style-type: none;
 }
 
+#user-message {
+  color: var(--bizblue)
+}
+
 @media only screen and (min-width: 501px) {
   #nav {
     display: flex;

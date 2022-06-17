@@ -2,6 +2,7 @@ import sgMail from '@sendgrid/mail'
 
 class Mail {
     constructor(req) {
+        console.log('request: ', req)
         this.req = req
         this.mail = sgMail
         this.mail.setApiKey(process.env.SENDGRID_API_KEY)
@@ -9,14 +10,14 @@ class Mail {
         this.msg = {
             to: 'josephplaugher@gmail.com', // Change to your recipient
             from: 'josephplaugher@gmail.com', // Change to your verified sender
-            subject: `New form submission from ${req.fullName}`,
+            subject: `New form submission from Freelance Site`,
             text: `New form submission: \n
                 Name: ${req.fullName} \n
                 Company: ${req.companyName} \n
                 Email: ${req.email} \n
                 Phone: ${req.phoneNumber} \n
                 Pref Contact Method: ${req.pref} \n
-                Comments: ${req.comments} `,
+                Message: ${req.message} `,
             // html: '<strong>and easy to do anywhere, even with Node.js</strong>',
         }
     }
