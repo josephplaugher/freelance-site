@@ -89,7 +89,6 @@ export default function Portfolio() {
                             </div>
                         </div>
                     </div>
-
                     <Button value={userNotify == '' ? "Contact Me!" : "Thank you, I'll be in touch!"} id="submit" onClick={submit} buttonContainerclassName="btnContainer" />
                 </form >
             </div>
