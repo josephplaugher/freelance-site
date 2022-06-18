@@ -8,13 +8,11 @@ import Services from './Services'
 import Contact from './Contact'
 import Portfolio from './Portfolio'
 import NoMatch from './NoMatch'
-// import bgImg from './bgImg.jpg'
 import './styles.css'
 
 export default function App() {
   return (
     <>
-      {/* <div style={{ backgroundImage: `url(${bgImg})` }} rol="image" className="bg-img" /> */}
       <div id="container">
         <div id="scroll-container">
           <Header />

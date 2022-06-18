@@ -1,6 +1,6 @@
 {
-  "name": "react-router-server-rendering",
-  "description": "Example for server rendering with React Router.",
+  "name": "freelanc-site",
+  "description": "website for getting freelance clients",
   "scripts": {
     "start": "concurrently \"npm:build\" \"npm:start-server\" ",
     "build": "webpack -w",
