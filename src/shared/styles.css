@@ -156,7 +156,7 @@ li {
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     bottom: 10px;
   }
