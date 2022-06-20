@@ -47,6 +47,7 @@ app.get('*', (req, res, next) => {
       <!DOCTYPE html>
       <html>
         <head>
+          <meta name="viewport" content="width=device-width,initial-scale=1.0">
           <title>Joseph Software Services</title>
           <script src="/bundle.js" defer></script>
           <link href="/main.css" rel="stylesheet">
