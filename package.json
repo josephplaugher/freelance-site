@@ -3,10 +3,10 @@
   "description": "website for getting freelance clients",
   "scripts": {
     "start": "concurrently \"npm:build\" \"npm:start-server\" ",
-    "build": "webpack -w",
-    "build:prod": " webpack",
-    "start-server": "nodemon NODE_ENV='development'  dist/server.js",
-    "start-server:prod": "NODE_ENV=production pm2 start dist/server.js --name Freelance-Site"
+    "build": "NODE_ENV='development' webpack -w",
+    "build:prod": "NODE_ENV='production' webpack",
+    "start-server": "nodemon NODE_ENV='development' dist/server.js",
+    "start-server:prod": "NODE_ENV='production' pm2 start dist/server.js --name Freelance-Site"
   },
   "babel": {
     "presets": [

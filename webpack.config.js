@@ -5,9 +5,8 @@ const nodeExternals = require('webpack-node-externals')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const mode = process.env.NODE_ENV == 'development' ? 'development' : 'production'
-console.log('webpack  mode: ', mode)
 const browserConfig = {
-  mode: 'development',
+  mode: mode,
   entry: './src/browser/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
