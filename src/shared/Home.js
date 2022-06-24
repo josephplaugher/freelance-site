@@ -3,8 +3,10 @@ import * as React from 'react'
 export default function Home() {
   return (
     <div className='content home-header'>
-      <h1 className='heading-center'>Streamline Your Business Processes.<br />
-        Remove ineffeciencies and make your customers prefer doing business with you.</h1>
+      <h1 className='heading-center'>
+        Streamline your business processes.<br />
+        Remove ineffeciencies.<br />
+        Make your customers prefer working with you.</h1>
     </div>
   )
 }
