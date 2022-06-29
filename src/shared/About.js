@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import profile from './profile.jpg'
 import LinkStyle from './components/LinkStyle'
 
 export default function About() {
@@ -8,6 +9,9 @@ export default function About() {
             <h1 className='heading-center'>About Me<br />
                 (aka, why I am the right person to solve your business process needs.)</h1>
             <h3 className='subheading-center'>Business Person First, Software Developer Second</h3>
+            <div id="profile-img-container">
+                <img src={profile} alt="profile image" id="profile-img" />
+            </div>
             <p>
                 During Joseph's six years as a corporate accountant he developed an ability to identify ineffeciencies
                 and potential losses caused by poor business processes. Now as a software developer, he corrects these

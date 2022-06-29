@@ -15,7 +15,8 @@ const browserConfig = {
   module: {
     rules: [
       { test: /\.(js)$/, use: 'babel-loader' },
-      { test: /\.css$/, use: ['css-loader'] }
+      { test: /\.css$/, use: ['css-loader'] },
+      { test: /\.(png|jpe?g|gif)$/i, use: 'file-loader' }
     ]
   },
   plugins: [

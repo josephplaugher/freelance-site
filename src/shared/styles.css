@@ -134,6 +134,12 @@ li {
     text-align: center;
   }
 
+  #profile-img {
+    float: right;
+    height: auto;
+    width: 25vw;
+  }
+
 
 }
 
@@ -185,6 +191,17 @@ li {
 
   .heading-center {
     text-align: center;
+  }
+
+  #profile-img-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #profile-img {
+    height: auto;
+    width: 90vw;
+    margin: 0 auto;
   }
 
 }
