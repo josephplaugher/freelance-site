@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import MenuButton from './MenuButton'
 
 const pages = [
   {
@@ -38,20 +39,22 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
-      {menu && (
-        <ul id='nav-mobile'>
-          {pages.map(({ path, param }) => (
-            <li key={param} onClick={() => { setMenu(false) }}>
-              <NavLink activeStyle={{ fontWeight: 'bold' }} to={`/${param}`}>
-                <div className='nav-item'>
-                  {path}
-                </div>
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-      )}
-      <div id="menu" onClick={() => { setMenu(menu === true ? false : true) }}><p>MENU</p></div>
+      <div id="menu" onClick={() => { setMenu(menu === true ? false : true) }} ><MenuButton /></div>
+      {
+        menu && (
+          <ul id='nav-mobile'>
+            {pages.map(({ path, param }) => (
+              <li key={param} onClick={() => { setMenu(false) }}>
+                <NavLink activeStyle={{ fontWeight: 'bold' }} to={`/${param}`}>
+                  <div className='nav-item'>
+                    {path}
+                  </div>
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        )
+      }
     </>
   )
 }

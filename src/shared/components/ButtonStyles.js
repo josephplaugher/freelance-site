@@ -5,10 +5,10 @@ export default {
         padding: "6px 20px 6px 20px",
         cursor: "pointer",
         color: "white",
-        backgroundColor: "#2665c4",
+        backgroundColor: "#0e2241",
         width: "200px",
         borderRadius: "5px",
-        borderColor: "#2665c4",
+        borderColor: "#0e2241",
         borderStyle: "solid",
         borderWidth: "2px",
         fontSize: "22px"

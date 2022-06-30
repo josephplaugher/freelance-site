@@ -7,7 +7,7 @@ export default {
         backgroundColor: "white",
     },
     label: {
-        color: "#2665c4",
+        color: "#0e2241",
         position: "relative",
         marginTop: "0px",
         marginLeft: "10px",
@@ -24,8 +24,8 @@ export default {
     textinput: {
         borderTop: "0px",
         borderRight: "0px",
-        borderLeft: "0.5px solid #2665c4",
-        borderBottom: "0.5px solid #2665c4",
+        borderLeft: "0.5px solid #0e2241",
+        borderBottom: "0.5px solid #0e2241",
         borderRadius: "5px",
         padding: "8px",
         width: "330px",

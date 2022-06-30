@@ -7,7 +7,7 @@ export default function About() {
     return (
         <div className="content">
             <h1 className='heading-center'>About Me<br />
-                (aka, why I am the right person to solve your business process needs.)</h1>
+                (aka, why I am the right person to fill your softfware needs.)</h1>
             <h3 className='subheading-center'>Business Person First, Software Developer Second</h3>
             <div id="profile-img-container">
                 <img src={profile} alt="profile image" id="profile-img" />

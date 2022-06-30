@@ -14,8 +14,8 @@ export default function App() {
   return (
     <>
       <div id="container">
+        <Header />
         <div id="scroll-container">
-          <Header />
           <div id="main" >
             <Routes>
               <Route exact path="/" element={<Home />} />
@@ -28,7 +28,6 @@ export default function App() {
             </Routes>
           </div>
         </div >
-        <Navbar />
       </div >
     </>
   )
