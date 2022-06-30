@@ -215,12 +215,3 @@ li {
   }
 
 }
-
-.loading {
-  text-align: center;
-  animation: spin 2s infinite linear;
-  font-size: 40px;
-  display: block;
-  margin: 20px auto;
-  font-style: normal;
-}
