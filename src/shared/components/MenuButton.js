@@ -1,7 +1,7 @@
 import React from 'react'
 const style = {
     width: "30px",
-    borderBottom: "4px solid black",
+    borderBottom: "4px solid #0e2241",
     marginBottom: "3px",
 }
 
