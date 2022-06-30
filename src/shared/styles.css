@@ -52,7 +52,7 @@ body {
 #scroll-container {
   font-size: 18px;
   height: 90vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 
 }
 
