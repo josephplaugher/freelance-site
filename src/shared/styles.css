@@ -29,9 +29,14 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
   /* background: var(--black); */
   color: var(--bizblue);
+}
+
+#app {
+  height: 100%;
+  background-color: var(--bizblue);
 }
 
 .bg-img {
@@ -44,16 +49,18 @@ body {
 }
 
 #container {
-  height: 100vh;
+  height: auto;
   color: var(--bizblue);
   overflow: hidden;
+  padding-bottom: 30px;
+  background-color: var(--bizblue);
+
 }
 
 #scroll-container {
   font-size: 18px;
-  height: 90vh;
+  height: auto;
   overflow-y: auto;
-
 }
 
 #main {
@@ -105,12 +112,15 @@ li {
   #header-container {
     display: flex;
     justify-content: space-between;
+    background-color: white;
+
   }
 
   #header {
     font-size: 25px;
     margin: 12px;
     text-align: left;
+
   }
 
   .heading-center {
@@ -151,6 +161,8 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
+
   }
 
   #header {
